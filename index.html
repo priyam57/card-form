@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD FORM</title>
+    <!-- linking css -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+ <body>
+<div class="main">
+<div class="top">
+<div class="container">
+    <div class="card-container">
+
+        <div class="front">
+            <div class="image">
+                <img src="image/chip.png" alt="">
+                <img src="image/visa.png" alt="">
+                <i class="fa-solid fa-circle" style="margin:10px 0 0 10px; font-size:30px"></i>
+                <i class="fa-regular fa-circle" style="margin:0px 0 0 10px"></i>
+            </div>
+            <div class="card-number-box">**** **** **** ****</div>
+            <div class="flexbox">
+                <div class="box1">
+                    <span>card holder</span>
+                    <div class="card-holder-name"></div>
+                </div>
+                <div class="box2">
+                    <span>expires</span>
+                    <div class="expiration">
+                        <span class="exp-month">mm</span>
+                        <span class="exp-year">yy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box3">
+                <span>cvv</span>
+                <div class="cvv-box"></div>
+                <img src="image/visa.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+    
+        <div id="bottom" >
+            <form class="flex-container" action=" ">
+        <label for="">CARDHOLDER NAME</label>
+        <input id="cardholder" type="text" placeholder="Type card holder name">
+        <label for="">CARD NUMBER</label>
+        <input id="card-number" type="text" placeholder="Enter card number" maxlength="16">
+        <label for="">EXP.DATE(MM/YY)</label>
+    <div class="try">
+        <input id="month"  type="number" placeholder="MM">
+        <input id="year" type="number" placeholder="YY">
+        <label class="cvv1" for="">CVV</label>
+        <input class="cvv" type="text" placeholder="enter cvv" maxlength="3">
+    </div>
+        <button id="btn">
+            Submit
+        </button>
+        </form>
+        </div>
+</div>
+<script src="index.js"></script>
+</body> 
+
+</html>
